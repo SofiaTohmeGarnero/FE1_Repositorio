@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+:root{
+    --color-uno:rgb(132 105 234);
+    --color-dos:rgb(76 228 207);
+    --color-tipografia: black;
+}
+  
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+header{
+    background-color:var(--color-uno);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+}  
+
+img{    
+    width: 50px;
+    height: 50px;
+}   
+header h2{
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+h1{
+    background-color: var(--color-tipografia);
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    color: var(--color-dos);
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 span {
+    color: var(--color-uno);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+main{
+    background-color: var(--color-dos);
+    min-height: calc(100vh - 40px - 61px); /*aprox resto paddings y font-size (del header y el footer)*/
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    padding: 50px 0;
+    text-align: start;
+    width: 70%;
+}
+
+main h2{
+    background-color: var(--color-tipografia);
+    color: var(--color-uno);
+    font-size: 2rem;
+    font-weight: 400;
+    padding-left: 30px;
+    width: 100%;
+}
+.contenido{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+}
+main ul{
+    margin: 25px 0 0 0 ;
+    text-align: start;
+        
+}
+
+main ul li{
+    padding: 3px;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.contenido ul li:hover{
+    font-weight: 700;
+}
+
+
+
+main ul li a{
+    color: var(--color-tipografia);
+    font-weight: 400;
+}
+
+main ul li i {
+    color: var(--color-tipografia);
+    font-weight: 700;
+}
+
+.contenido ul li a:hover{
+    color: var(--color-uno);
+    font-weight: 700;
+}
+
+.iconos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.html{
+    padding-right: 25px;
+    color: #e44d26;
+}
+
+.css{
+    padding-left: 25px;
+    color: #0070ba;
+}
+
+footer{
+    background-color: var(--color-uno);
+    color: var(--color-tipografia);
+}
+
+footer p{
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+}
